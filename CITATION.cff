@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+title: "Applied Purist Series Vol. VII — Lean 4 Formal Verification Suite"
+version: "1.0.0"
+date-released: "2026-11-24"
+authors:
+  - family-names: "Ghulam-e-Shah-e-Unmani"
+    given-names: "Arya Arunachala Ananda"
+    affiliation: "BhutaDamaraSena R&D Labs, Aghora Abraham Global LLC"
+license: CC-BY-4.0
+doi: 10.5281/zenodo.24417929
+url: "https://lean.bhutadamarasena.com/"
+references:
+  - type: software
+    title: "Applied Purist Series Vol. VI — Lean 4 Formal Verification & C99 Silicon Artifact"
+    doi: 10.5281/zenodo.24496435

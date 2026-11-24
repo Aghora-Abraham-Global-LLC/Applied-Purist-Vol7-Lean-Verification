@@ -1,0 +1,11 @@
+name = "purist_lean"
+version = "0.1.0"
+defaultTargets = ["PuristSiliconCore", "purist_audit"]
+
+[[lean_lib]]
+name = "PuristSiliconCore"
+
+[[lean_exe]]
+name = "purist_audit"
+root = "PuristAudit"
+supportInterpreter = true

@@ -1,0 +1,44 @@
+{
+  "title": "Applied Purist Series Vol. VII \u2014 Lean 4 Formal Verification & Silicon ABI Archive",
+  "upload_type": "software",
+  "license": "cc-by-4.0",
+  "version": "1.0.0",
+  "description": "Mathlib-free Lean 4.36.0 / Lake 5.0 formal verification suite (115 KERNEL_ONLY theorems, 0 sorry, 0 native_decide) for Applied Purist Vol. VII (10.5281/zenodo.24417929). Extends the Vol. VI baseline (10.5281/zenodo.24496435) with Mathlib-free Pocklington primality proofs for p64 = 2^64-59 and p106 = 2^106-117, Knuth/Dekker EFT identities, SplitTimeEpoch 10-yr bounds, 4-edge Sagnac gauge invariance, scaled-sphere Dirac/Pines projections, 1PN Routh/Kozai stability, Kerr/GHSS/Dray-'t Hooft/MSS algebra, bit-exact IEEE-754 binary32 RNE bounds (>1625x), and StrongFieldChronoState64 64-byte WebGPU ABI proofs.",
+  "creators": [
+    {
+      "name": "Ghulam-e-Shah-e-Unmani, Arya Arunachala Ananda",
+      "affiliation": "BhutaDamaraSena R&D Labs, Aghora Abraham Global LLC"
+    }
+  ],
+  "keywords": [
+    "Lean 4",
+    "Formal Verification",
+    "Solinas Prime",
+    "Pocklington Primality",
+    "Strong-Field Chronometry",
+    "WebGPU ABI",
+    "IEEE-754"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.24417929",
+      "relation": "isSupplementTo",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.24496435",
+      "relation": "continues",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.24392562",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "https://lean.bhutadamarasena.com/",
+      "relation": "isDocumentedBy",
+      "scheme": "url"
+    }
+  ]
+}

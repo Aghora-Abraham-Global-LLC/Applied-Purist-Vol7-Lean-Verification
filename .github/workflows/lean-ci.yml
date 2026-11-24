@@ -1,0 +1,13 @@
+name: Verify Lean 4 & C99
+on: [push, pull_request, release]
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          sudo apt-get update -qq && sudo apt-get install -y clang lld
+          curl https://elan.lean-lang.org/elan-init.sh -sSf | sh -s -- -y --default-toolchain leanprover/lean4:v4.36.0
+          echo "$HOME/.elan/bin" >> $GITHUB_PATH
+      - run: lake build && lake exe purist_audit ./proof-manifest.json
+      - run: clang --target=wasm32 -nostdlib -O3 -Wl,--no-entry -Wl,--export-all -Wl,--strip-all -o /tmp/solinas_ct.wasm c_silicon/solinas_ct.c
